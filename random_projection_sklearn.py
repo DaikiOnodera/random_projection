@@ -15,7 +15,6 @@ print(gram_mat)
 
 print("original shape:{}".format(X.shape))
 transformer = random_projection.GaussianRandomProjection(n_components=10)
-print(transformer.n_components_)
 X_new = transformer.fit_transform(X)
 print("transformed shape:{}".format(X_new.shape))
 
